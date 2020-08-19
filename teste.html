@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>Produtos Cadastrados</div>
+    <ul id="nomescadastrados">
+
+    </ul>
+
+    <a href="auxiliar.html">pagina auxiliar</a>
+    <script>
+        const nameArray = [];
+        function saveName() {
+            const nome = document.getElementById("yourName").value;
+            nameArray.push(nome);
+            const nomesJson = JSON.stringify(nameArray);
+            localStorage.setItem("nomes", nomesJson);
+        }
+        function loadNames() {
+            const namesJson = localStorage.getItem("nomes");
+            const names = JSON.parse(namesJson);
+            namesArray = names;
+            for (let i = 0; i < names.length; i++) {
+                document.getElementById("nomescadastrados").innerHTML += "<li>" + names[i] + "</li>";
+            }
+
+        }
+        function changeName(name, fielId) {
+            localStorage.setItem(fielId, name);
+        }
+        function init() {
+            const name = localStorage.getItem("nome");
+            setInput(name);
+
+        }
+        function setInput(name) {
+            document.getElementById('yourName').value = name;
+        }
+        init();
+        loadNames();
+
+
+
+
+
+        const produtoArray = [];
+        function saveProduto() {
+            const nome = document.getElementById("nomeProduto").value;
+            produtoArray.push(nome);
+            const nomesJson = JSON.stringify(produtoArray);
+            localStorage.setItem("Produtos", nomesJson);
+        }
+
+        function loadNames() {
+            const namesJson = localStorage.getItem("Produtos");
+            const names = JSON.parse(namesJson);
+            produtosArray = names;
+            for (let i = 0; i < names.length; i++) {
+                document.getElementById("nomescadastrados").innerHTML += "<li>" + names[i] + "</li>";
+            }
+
+        }
+
+        function changeName(name, fielId) {
+            localStorage.setItem(fielId, name);
+        }
+
+        function init() {
+            const name = localStorage.getItem("Produto");
+            setInput(name);
+        }
+
+        function setInput(name) {
+            document.getElementById("nomeProduto").value = name;
+        }
+
+        init();
+    </script>
+</body>
+
+</html>

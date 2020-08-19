@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="online-shop.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartStore</title>
+</head>
+
+
+<body>
+
+    <header id="fundo">
+        <a id="tx1" href="index.html">Cadastro</a>
+        <a id="tx2" href="table.html">Consulta</a>
+        <a href="index.html"><img id="im" src="online-shop.png" alt=""></a>
+    </header>
+
+
+
+
+    <div>
+        <a id="titulo" href="#">Cadastre um novo Produto</a>
+
+    </div>
+
+    <div class="quadrado"></div>
+
+
+    <label class="nome" for="Nome_Produto">Nome Produto</label>
+    <input class="nome2" type="text" name="nomeProduto" id="nomeProduto" required>
+
+    <label class="numero" for="Numero_Serie">Número de Série</label>
+    <input class="numero2" type="text" id="serie" maxlength="7" onkeyup="mascara_serie()" placeholder="ex: xxx.xxx"
+        onkeyup="mascaraSerie()" required>
+
+    <label class="op" for="tp">Tipo</label>
+    <select class="op2" name="categorias" id="tp">
+        <option value="null">Selecione...</option>
+        <option value="Parafuso">Parafuso</option>
+
+    </select>
+    <div>
+        <label id="txta" for="texta">Caracteristicas</label>
+        <textarea name="txta" id="txta2" cols="30" rows="6"></textarea>
+    </div>
+
+
+    <button id="bt" onclick="saveProduto(),saveSerie(),saveText(),saveOption()">Salvar</button>
+
+
+    <script src="Java.js">
+
+
+    </script>
+</body>
+
+</html>

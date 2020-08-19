@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+    body {
+        background: rgba(61, 1, 121, 0.281);
+    }
+
+#nomesCadastrados{
+    position: absolute;
+    top: 10vh;
+}
+
+
+
+
+#txt {
+    position: absolute;
+    top: 9.6vh;
+    left: 15vw;
+    color: white;
+    background-color: rebeccapurple;
+    padding: 0.5em 1.5em;
+    border-radius: 0.3em;
+    text-decoration: none;
+}
+
+#txt:hover {
+    background-color: rgb(137, 120, 151);
+    transition: all 0.5s ease-in-out ;
+}
+
+#txt2 {
+    position: absolute;
+    top: 9.6vh;
+    left: 33vw;
+    color: white;
+    background-color: rebeccapurple;
+    padding: 0.5em 1.5em;
+    border-radius: 0.3em;
+    text-decoration: none;
+}
+
+.fil{
+    position: absolute;
+    top: 9.5vh;
+    left: 20vw;
+    padding: 10px 50px 10px 20px;
+    border-radius: 10em;
+    outline: none;
+}
+
+
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    position: absolute;
+    top: 15vh;
+    left: 15vw;
+    
+}
+table:hover{
+    background: #000;
+}
+
+table tr td:not(:last-child) {
+    padding: 1px 0 1px 1px;
+    /*Retirar padding a direita da td, exceto da última para não criar colapso de bordas*/
+}
+
+
+table tr td span {
+    display: block;
+    background-color: white;
+    padding: 5px 5px 15px 5px;
+    text-align: center;
+}
+table tr td span:hover{
+    background: rgba(90, 61, 119, 0.726);
+    color: white;
+}
+
+table tr:nth-child(even) td span {
+    background-color: rgb(137, 120, 151);
+    color: white;
+    /*Se desejar alternar cores das linhas*/
+}
+
+table tr:nth-child(even) td span:hover{
+    background: rgba(90, 61, 119, 0.726);
+    color: white;
+}
+
+
+#im{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 1vh;
+    left: 1vw;
+}
+
+#fundo{
+    background-color: rebeccapurple;
+    height: 8vh;
+}
+#tx1{
+    position: absolute;
+    color: white;
+    right: 8vw;
+    top: 2.5vh;
+    font-size: 25px;
+    }
+
+#tx2{
+    position: absolute;
+    color: white;
+    right: 2vw;
+    top: 2.5vh;
+    font-size: 25px;
+}
+
+#titulo{
+    position: absolute;
+    padding: 1em 0.5em;
+    top: 12vh;
+    left: 43.5vw;
+    font-size: 25px;
+    color: rgb(0, 0, 0); 
+     
+    
+}
+
+#titulo:hover{
+    text-decoration: none;
+}
+
+.quadrado {
+    position: absolute;
+    border-top: 400px solid rebeccapurple;
+    width: 300px;
+    left: 43vw;
+    top: 23vh;
+    border-radius: 3em 0 3em 0;
+    }
+.nome{
+    position: absolute;
+    top: 25vh;
+    left: 45vw;
+    font-size: 25px;
+}
+input:invalid{
+        border: 1px solid red;
+    }
+    input:valid{
+        border: none;        
+    }
+ 
+.nome2{
+    position: absolute;
+    top: 28vh;
+    left: 44.5vw;
+    font-size: 20px;
+    outline: none;
+    border-radius: 20vh;    
+}
+.numero{
+    position: absolute;
+    top: 32vh;
+    left: 45vw;
+    font-size: 25px;
+}
+.numero2{
+    position: absolute;
+    top: 35vh;
+    left: 44.5vw;
+    font-size: 20px;
+    outline: none;
+    border-radius: 20vh;
+}
+
+.op{
+    position: absolute;
+    top: 39vh;
+    left: 45vw;
+    font-size: 25px;
+}
+
+.op2{
+    position: absolute;
+    top: 42vh;
+    left: 44.5vw;
+    font-size: 20px;
+    outline: none;
+    border-radius: 20vh;  
+}
+
+#txta{
+    position: absolute;
+    top: 46vh;
+    left: 45vw;
+    font-size: 25px;
+}
+
+#txta2{
+    position: absolute;
+    top: 49vh;
+    left: 44.5vw;
+    resize: none;
+    outline: none;
+    border-radius: 1vh;  
+}
+
+#bt{
+    position: absolute;
+    top: 60vh;
+    left: 49vw;
+    font-size: 25px;
+    border-radius: 5em 5em 5em 5em;
+    
+}
+#bt:hover{
+    padding: 5px 10px;
+    left: 48vw;
+    transition: all 0.5s ;
+    background:rgb(152, 111, 192);   
+    
+}
+
+#bt:active{
+    left: 926px;
+    outline: none;
+}
+
+
+
+
